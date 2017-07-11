@@ -1,0 +1,24 @@
+{
+    "name": "ddelivery/clientsdk",
+    "description": "SDK for quick creation DDelivery client integration",
+    "keywords": [
+        "ddelivery",
+        "sdk"
+    ],
+    "homepage": "http://ddelivery.ru/",
+    "type": "library",
+    "license": "MIT",
+
+    "autoload": {
+        "psr-0": {
+            "DDelivery": "application/classes"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.2.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+
+}

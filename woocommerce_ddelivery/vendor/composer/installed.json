@@ -1,0 +1,41 @@
+[
+    {
+        "name": "ddelivery/clientsdk",
+        "version": "1.4.3",
+        "version_normalized": "1.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ddelivery/clientsdk2.git",
+            "reference": "eb7a772d0ba0b1da771de5b6839c821f849cfa82"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ddelivery/clientsdk2/zipball/eb7a772d0ba0b1da771de5b6839c821f849cfa82",
+            "reference": "eb7a772d0ba0b1da771de5b6839c821f849cfa82",
+            "shasum": ""
+        },
+        "time": "2016-07-02T09:39:49+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "DDelivery": "application/classes"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "SDK for quick creation DDelivery client integration",
+        "homepage": "http://ddelivery.ru/",
+        "keywords": [
+            "ddelivery",
+            "sdk"
+        ]
+    }
+]

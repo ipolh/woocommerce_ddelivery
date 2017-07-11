@@ -1,0 +1,19 @@
+{
+    "name": "ipolh/woocommerce_ddelivery",
+    "authors": [
+        {
+            "name": "dmz9",
+            "email": "dmz9@yandex.ru",
+            "homepage": "http://ipolh.com",
+            "role": "developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WPWooCommerceDDelivery\\": "src"
+        }
+    },
+    "require": {
+        "ddelivery/clientsdk": "^1.4"
+    }
+}
