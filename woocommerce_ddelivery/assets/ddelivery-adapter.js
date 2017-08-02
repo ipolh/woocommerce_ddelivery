@@ -197,6 +197,19 @@
                 })
             },
             onSubmit: function () {
+                // default checkout template has #shipping_method block and each shipping is radio-input
+                var $shippingMethods = $('input.shipping_method');
+                var $currentMethod;
+                if($shippingMethods.parents().filter('#shipping_method').length){
+                    // multiple delivery methods - radio inputs
+                    $currentMethod = $shippingMethods.filter('[checked=checked]');
+                }else{
+                    // single delivery - hidden input
+                    $currentMethod = $shippingMethods;
+                }
+                if($currentMethod.length && 'ddelivery-id'!=$currentMethod.eq(0).val()){
+                    return true;
+                }
                 DDeliveryModule.sendForm({
                     success: function () {
                         controller.log('submit success');
