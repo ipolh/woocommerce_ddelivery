@@ -86,7 +86,7 @@ class Controller {
 		$total = $session->get( 'shipping_method_counts', array());
 		foreach ( $total as $i => $whatever ) {
 			$session->set( 'shipping_for_package_' . $i,
-			               'fuck_you_woocommerce' );
+			               'censored' );
 		}
 
 		$session->save_data();
