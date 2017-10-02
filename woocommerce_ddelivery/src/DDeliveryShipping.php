@@ -124,7 +124,7 @@ class DDeliveryShipping extends \WC_Shipping_Method {
 	public function calculate_shipping( $package = array() ) {
 		$price = WC()->session->get( Core::SESSION_FIELD_PRICE,
 		                             false );
-		if ( ! $price ) {
+		if ( false === $price ) {
 			$price = 400;
 		}
 		$this->add_rate( array(
